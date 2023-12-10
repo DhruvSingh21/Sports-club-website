@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Jalandhar Sports Club - Coaching and Training</title>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="download.png" alt="Sports Club Logo">
+            <h1>Jalandhar Sports Club</h1>
+            <nav>
+               
+
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li class="dropdown">
+                        <a href="#">Sports</a>
+                        <div class="dropdown-content">
+                            <div class="sub-dropdown">
+                                <a href="indoor-sports.html">Indoor </a>
+                                <a href="outdoor-sports.html">Outdoor </a>
+                            </div>
+                            
+                        </div>
+                    </li>
+                    <li class="dropdown">
+                        <a href="Candt.html">Coaching & Training</a>
+                        
+                    </li>
+                    <li><a href="achievements.html">Achievements</a></li>
+                   
+                    <li class="dropdown">
+                        <a href="#">About Us</a>
+                        <div class="dropdown-content">
+                            <a href="team.html">Our Team</a>
+                            <a href="contact-us.html">Contact Us</a>
+                        </div>
+                    </li>
+                </ul>
+            </nav>   
+        </div>
+    </header>
+
+    <main>
+       
+        <section class="coaching-training-container">
+            <h2>Coaching and Training</h2>
+            <div class =coaching-training-page>
+            <div class="booking-form-container">
+                <h3>Book a Coaching/Training Session</h3>
+
+                <form action="submit_booking_form.php" method="post">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="phone">Phone:</label>
+                    <input type="tel" id="phone" name="phone" required>
+
+                    <label for="sport">Select Sport:</label>
+                    <select id="sport" name="sport" required>
+                        <option value="cricket">Cricket</option>
+                        <option value="tennis">Tennis</option>
+                        <option value="Football">Football</option>
+                        <option value="Kabaddi">Kabaddi</option>
+                        <option value="Handball">Handball</option>
+                        <option value="Hockey">Hockey</option>
+                        <option value="Table tennis">Table tennis</option>
+                        <option value="Badminton">Badminton</option>
+                        <option value="Basketball">Basketball</option>
+                        <option value="vollyball">vollyball</option>
+                        <!-- Add more sport options as needed -->
+                    </select>
+
+                    <label for="date">Select Date:</label>
+                    <input type="date" id="date" name="date" required>
+
+                    <label for="time">Select Time:</label>
+                    <input type="time" id="time" name="time" required>
+
+                    <button type="submit">Book Now</button>
+                </form>
+            </div>
+        </div>
+        </section>
+    </main>
+
+    <footer>
+        <!-- Footer content if needed -->
+    </footer>
+</body>
+
+</html>

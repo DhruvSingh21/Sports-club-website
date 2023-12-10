@@ -1,0 +1,452 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+
+header {
+    background-color: rgba(8, 3, 72, 0.952);
+    color: rgb(255, 132, 0);
+    padding: 15px;
+    display:ruby-text;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+.logo img {
+    width: 169px;
+    height: 169px;
+    margin-right: 0px;
+    margin-left: 0px;
+    margin-bottom: 0px
+    ;
+}
+
+nav ul {
+    list-style-type: none;
+    display:flex;
+}
+
+nav li {
+    margin-right: 50px;
+}
+
+nav a {
+    text-decoration: none;
+    color: rgb(255, 115, 0);
+    transition: color 0.3s ease-in-out;
+}
+
+nav a:hover {
+    color: #ff9900;
+}
+
+main {
+    padding: 20px;
+}
+
+.hero {
+    background-color: #ff9900;
+    color: #fff;
+    text-align: center;
+    padding: 50px;
+    border-radius: 10px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+/* Existing styles remain unchanged */
+
+nav .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    padding: 10px;
+    z-index: 1;
+    opacity: 0;
+    transform: translateY(-10px); /* Initial position above */
+}
+
+nav .dropdown:hover .dropdown-content {
+    display: block;
+    opacity: 1;
+    transform: translateY(0); /* Move to the normal position */
+    transition: opacity 0.3s ease-in-out;
+}
+
+.sub-dropdown {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    transition: color 0.3s ease-in-out;
+}
+
+.sub-dropdown a {
+    margin-top: 1px;
+    text-decoration: none;
+    margin: 3px 0;
+    transition: color 0.3s ease-in-out;
+    flex-direction: column;
+}
+
+.sub-dropdown :hover {
+    color: #694bba;
+}
+
+.sub-dropdown a:hover {
+    color: #694bba;
+}
+
+
+
+.sport-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.sport-box img {
+    max-width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.sport-box h2 {
+    font-size: 1.5em;
+    margin: 0;
+}
+
+.sport-box p {
+    color: #666;
+    margin: 5px 0;
+}
+
+
+
+.sport-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.sport-box {
+    flex: 1 1 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.sport-box img {
+    max-width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.sport-box h2 {
+    font-size: 1.5em;
+    margin: 0;
+}
+
+.sport-box p {
+    margin: 5px 0;
+}
+
+/* Existing styles remain unchanged */
+/* Existing styles remain unchanged */
+
+.outdoor-sport-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.outdoor-sport-box {
+    flex: 1 1 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.outdoor-sport-box img {
+    max-width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.outdoor-sport-box h2 {
+    font-size: 1.5em;
+    margin: 0;
+}
+
+.outdoor-sport-box p {
+    margin: 5px 0;
+}
+
+
+.home-container {
+    text-align: center;
+    padding: 0px;
+}
+
+.contact-section,
+.events-section {
+    margin-top: 30px;
+}
+
+.contact-details {
+    font-size: 1.2em;
+    margin: 10px 0;
+    color: #333;
+}
+
+.event-slider {
+    display: flex;
+    overflow-x: hidden;
+    scroll-snap-type: x mandatory;
+    position: relative;
+}
+
+.event-container {
+    display:contents;
+    scroll-snap-align: start;
+    flex: 0 0 auto;
+    text-align: center;
+}
+
+.event-box {
+    width: 500px;
+    border: 3px solid #ccc;
+    border-radius: 10px;
+    padding: 15px;
+    margin-left: 21px;
+    scroll-snap-align: start;
+    text-align: center;
+}
+
+.event-box img {
+    
+    width: 100%;
+    border-radius:10px;
+    margin-bottom: 10px;
+}
+
+.event-box h2 {
+    font-size: 1.2em;
+    margin: 10px 0;
+    align-items: center;
+
+}
+
+.event-box p {
+    margin: 5px 0;
+    color: #666;
+}
+
+.nav-btn {
+    position: absolute;
+    top: -40px;
+    font-size: 2em;
+    cursor: pointer;
+    color: #333;
+}
+
+.nav-btn.left {
+    left: 50px;
+}
+
+.nav-btn.right {
+    right: 50px;
+}
+.events-section{
+    text-align: center;
+}
+
+
+
+
+main {
+    padding: 20px;
+}
+
+.team-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.team-member {
+    margin-bottom: 30px;
+    border: 1px solid #ccc;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.team-member img {
+    max-width: 100%;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+
+form {
+    display: grid;
+    grid-gap: 15px;
+}
+
+label {
+    font-weight: bold;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.coaching-training-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.booking-form-container {
+    margin-top: 30px;
+    border: 1px solid #ccc;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+form {
+    display: grid;
+    grid-gap: 15px;
+}
+
+label {
+    font-weight: bold;
+}
+
+
+.achievement-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.achievement-item {
+    margin-bottom: 3px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.achievement-item img {
+    max-width: 100%;
+    border-radius: 10px;
+    margin-bottom: 1px;
+}
+.team-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.team-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.team-table th, .team-table td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+}
+
+.team-table img {
+    max-width: 50px;
+    border-radius: 50%;
+}
+main.coaching-training-page {
+    background-image: url='Cricket.jpg'; /* Replace with your image URL */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: #fff;
+}
+
+.coaching-training-container {
+    background-image: url=('Gold.jpg');
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.booking-form-container {
+    margin-top: 30px;
+    border: 1px solid #ccc;
+    padding: 15px;
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.8); /* Background color with opacity */
+}
+
+form {
+    display: grid;
+    grid-gap: 15px;
+}
+
+label {
+    font-weight: bold;
+}
+
+input,
+select {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}

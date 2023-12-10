@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Jalandhar Sports Club</title>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="download.png" alt="Sports Club Logo">
+            <h1>Jalandhar Sports Club</h1>
+            
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li class="dropdown">
+                    <a href="#">Sports</a>
+                    <div class="dropdown-content">
+                        <div class="sub-dropdown">
+                            <a href="indoor-sports.html">Indoor </a>
+                            <a href="outdoor-sports.html">Outdoor </a>
+                        </div>
+                        
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="Candt.html">Coaching & Training</a>
+                    
+                </li>
+                <li><a href="achievements.html">Achievements</a></li>
+               
+                <li class="dropdown">
+                    <a href="#">About Us</a>
+                    <div class="dropdown-content">
+                        <a href="team.html">Our Team</a>
+                        <a href="contact-us.html">Contact Us</a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <section class="home-container">
+                <div class="welcome-section">
+                    <h1>Welcome to Jalandhar Sports Club</h1>
+                    <p>Experience the thrill of sports in a vibrant and dynamic environment. Whether you're a seasoned athlete or a beginner, our club offers a variety of indoor and outdoor sports for everyone.</p>
+                    <p>Join us and be a part of a community passionate about health, fitness, and the joy of sports!</p>
+                </div>
+            </section></main>
+                
+            <div class="events-section">
+                <h2>UpComing Events</h2>
+
+                <div class="event-slider">
+                    <div class="event-container">
+                        <div class="event-box">
+                            <img src="Marathon.webp" alt="Event 1 Image" height="269    ">
+                            <h2>Half Marathon(21Km)</h2>
+                            <p>Date: 7/12/2023</p>
+                        </div>
+
+                        <div class="event-box">
+                            <img src="ctournament.jpg" alt="Event 2 Image" height="269" >
+                            <h2>Club vs Club(Cricket tournament)
+                            </h2>
+                            <p>Date from: 15/12/2023 to 21/1/2024</p>
+                        </div>
+
+                        <div class="event-box">
+                            <img src="event-3.jpg" alt="Event 3 Image" height="269">
+                            <h2>New year 2024 Light Show in Field and track ground</h2>
+                            <p>Date: 31/12/2023 6:00pm-8:00pm</p>
+                        </div>
+                    </div>
+
+                    <!-- Add more event-container divs as needed -->
+
+                    <div class="nav-btn left" onclick="scrollEventSlider('left')">&#60;</div>
+                    <div class="nav-btn right" onclick="scrollEventSlider('right')">&#62;</div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <!-- Footer content remains unchanged -->
+    </footer>
+
+    <script>
+        function scrollEventSlider(direction) {
+            const eventSlider = document.querySelector('.event-slider');
+            const scrollAmount = eventSlider.clientWidth * 3; // Scroll three event boxes at a time
+
+            if (direction === 'left') {
+                eventSlider.scrollBy({
+                    left: -scrollAmount,
+                    behavior: 'smooth'
+                });
+            } else if (direction === 'right') {
+                eventSlider.scrollBy({
+                    left: scrollAmount,
+                    behavior: 'smooth'
+                });
+            }
+        }
+    </script>
+            
+            
+            <div class="contact-section">
+                    <h2>Contact Us</h2>
+                    <p class="contact-details">Address: 123 Sports Avenue, Jalandhar, India</p>
+                    <p class="contact-details">Phone: +91 123 456 7890</p>
+                    <p class="contact-details">Email: info@jalandharsportsclub.com</p>
+                </div>
+    
+                
+        
+    
+
+   
+        <p>&copy; 2023 Jalandhar Sports Club</p>
+   
+</body>
+
+</html>
